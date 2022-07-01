@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #333;
+    width: 100%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+
+
+
+
+/* HEADER*/
+header {
+margin: auto auto;
+
+    background: url(https://static.pexels.com/photos/248515/pexels-photo-248515.png);
+    background-position: center;
+    background-size: cover; 
+
+    margin: auto auto;
+    
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: gray;
+    text-align: center;
+    color: white;
+
+}
+
+header div {
+    margin: auto auto;
+    min-width: 50%;
+    max-width: 600px;
+}
+
+header h1{
+    margin-top: 70px;
+}
+
+header p {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+header nav{
+    margin: auto;
+    padding: 40px 0;
+    margin: 20px 0;
+    margin-bottom: 70px;
+    
+}
+
+header a {
+    text-decoration: none;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    padding: 20px;
+    
+
+    border: 1px solid rgb(153, 151, 151);
+    border-radius: 10px;
+
+}
+
+header a:hover {
+    background-color: white;
+    color: rgb(54, 54, 54);
+    transition: 0.3s;
+}
+/************************************************/
+
+/* MAIN */
+
+/* Section A */
+main > #section-A {
+    padding-top: 30px;
+    padding-bottom: 45px;
+    
+    background-color: #eaeaea;
+    color: #333;
+}
+
+main > #section-A > div{
+    margin: auto auto;
+    max-width: 60%;
+}
+
+main > #section-A h2 {
+    text-align: center;
+}
+
+main > #section-A p {
+    margin-top: 45px;
+    
+    columns: 2;
+    text-align: center;
+}
+/*****************************/
+
+/* Section B */
+main > #section-B {
+    background-color: rgb(54, 54, 54);
+}
+
+main > #section-B > div#div-3 {
+    margin: auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+
+}
+
+main > #section-B > div#div-3 > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    background-color: white;
+    margin: 1%;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding-bottom: 45px;
+    text-align: center;
+    width: 33%;
+    min-width: 250px;
+    
+}
+
+main > #section-B > div#div-3 > div > h2 {
+    margin-top: 30px;
+    padding: 0px 30px;
+}
+
+main > #section-B > div#div-3 > div > P {
+    margin: auto auto;
+    margin-top: 30px;
+    padding: 0px 30px;
+
+}
+
+#section-B img {
+    width: 100%;
+    height: auto;
+}
+/*******************************/
+
+/* Section C */
+main > #section-C {
+    background-color: white;
+    text-align: center;
+    padding: 30px 30px;
+}
+
+main > #section-C > p {
+    margin: auto auto;
+    margin-top: 45px;
+    margin-bottom: 15px;
+    max-width: 600px;
+    min-width: 50%;
+
+}
+/******************************/
+
+/* Section D*/
+main > #section-D {
+    display: flex;
+    flex-direction: row;
+
+    text-align: center;
+    color: white;
+}
+
+#contact-us {
+    background-color: #2690d4;
+    padding: 60px 30px;
+
+}
+
+#contact-us > p {
+    margin: 20px 0 0 0;
+}
+
+#about-us {
+    padding: 60px 30px;
+}
+
+#about-us > p {
+    margin: 20px 0 0 0;
+}
+/******************************/
+
+/* FOOTER */
+footer {
+    padding: 20px 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: #333;
+    background-color: #eaeaea;
+    padding: 5px;
+    
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+    text-shadow: 1px 1px 20px white;
+}
+/*****************************************/

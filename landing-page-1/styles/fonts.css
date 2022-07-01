@@ -1,0 +1,15 @@
+@font-face {
+    font-family: poppins-semibold;
+    src: url("../components/fonts/poppins-semibold-webfont.woff") format("woff");
+    src: url("../components/fonts/poppins-semibold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url("../components/fonts/poppins-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url("../components/fonts/poppins-light-webfont.woff") format("woff");
+}

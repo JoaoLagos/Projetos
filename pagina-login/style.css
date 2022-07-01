@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "login";
+    src: url("components/fonts/Supertalls.otf") format("opentype");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(components/img/bg-body7.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+/* CAIXA */
+div#box {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto auto;
+    width: 500px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 90px gray;
+}
+/**********FIM-CAIXA**************/
+
+/* LOGIN */
+#login > h1 {
+    letter-spacing: 10px;
+    font-family: "login";
+    margin: 20px 0px;
+
+}
+/************ FIM-LOGIN ***************/
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 70%;
+
+}
+
+form > input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.26);
+    font-size: 16px;
+    
+}
+
+a {
+    margin-top: -14px;
+    margin-left: auto;
+
+}
+
+form > #submit {
+    font-weight: bolder;
+    font-size: 16px;
+    background-image: linear-gradient(to right, rgb(0, 204, 255), rgb(255, 0, 221));
+    color: white;
+    padding-left: 0px;
+    border: none;
+    border-radius: 90px;
+    box-shadow: 1px 1px 10px black;
+    
+}
+
+form > #submit:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 20px rgb(89, 0, 255);
+}
+/**********************************FIM-FORM*******************************************/
+
+/* ALTERNATIVE LOGIN */
+#alternative-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    gap: 20px;
+    font-weight: bolder;
+}
+/*****************************FIM-ALTERNATIVE LOGIN**********************************/
