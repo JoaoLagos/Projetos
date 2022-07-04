@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px 0px;
+    font-size: 16px;
+    letter-spacing: 2px;
+
+}
+
+.title {
+    font-size: 10vw;
+    font-family: "Passion One", cursive;
+    font-variant: small-caps;
+    font-weight: bold; 
+}
+
+.referencia {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+/******************************* FIM-HEADER *******************************/
+
+/* MAIN */
+main{
+    font-family: Sriracha, cursive;
+    font-size: 3.5vw;
+
+}
+
+main > div {
+    padding: 70px 30px;
+}
+
+main > div.com-imagem {
+    box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%)
+}
+
+main > div.com-imagem > p{
+    margin: 40px 0px;
+    background-color: rgb(0 0 0 / 47%);
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px black;
+    text-shadow: 1px 1px 0px black;
+
+}
+
+div.img1 {
+    background-image: url(../components/img/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+}
+
+div.img2 {
+    background-image: url(../components/img/img2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+/***************************** FIM-MAIN *****************************/
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px 0px;
+    text-align: center;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
