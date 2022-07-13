@@ -93,7 +93,7 @@ form > #submit:hover {
 /**********************************FIM-FORM*******************************************/
 
 /* ALTERNATIVE LOGIN */
-#alternative-login{
+#alternative-login {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,4 +101,37 @@ form > #submit:hover {
     gap: 20px;
     font-weight: bolder;
 }
+
+#alternative-login nav {
+    display: flex;
+    gap: 20px;
+}
+
+#alternative-login a {
+    font-size: 50px;
+
+}
+#alternative-login a.facebook:hover {
+    text-shadow: 1px 1px 5px #3b5998;
+
+}
+#alternative-login a.twitter:hover {
+    text-shadow: 1px 1px 5px #00acee;
+
+}
+#alternative-login a.google-plus:hover {
+    text-shadow: 1px 1px 5px #db4a39;
+
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+.fa-twitter-square {
+    color: #00acee;
+}
+.fa-google-plus {
+    color: #db4a39;
+}
+
 /*****************************FIM-ALTERNATIVE LOGIN**********************************/
