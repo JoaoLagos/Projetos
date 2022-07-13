@@ -20,6 +20,10 @@ img {
     margin: auto;
 }
 
+ul {
+    padding: 0;
+}
+
 h1 {
     color: white;
     background-color: black;

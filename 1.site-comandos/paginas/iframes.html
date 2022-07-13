@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos - Iframes</title>
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <hr>
+    <h1>IFRAMES</h1>
+    <hr>
+    <hr>
+    <ul>
+        <h2>NÃO RECOMENDADO USAR IFRAMES, MAS...</h2>
+        <p>Pode ser usado para colocar um vídeo (do Youtube, do Vimeo, etc), para colocar um mapa (do Google Maps, do Waze, etc), para colocar Planilhas, Documentos e entre outros</p>
+        <li class="topic t1"><h2 class="title-topic">Tipos de Iframes:</h2> <!-- TIPOS DE IFRAMES -->
+            <p>Existem 2 tipos de <strong>src=""</strong> de referência para utilizar no <strong>iframe</strong>:</p>
+            <ol>
+                <li>Links de outros sites</li>
+                <li>Diretório Local</li>
+                <li>Abrir alguma página (seja link de outros site ou diretório local) no iframe, através de um clique (por âncora: <strong>&lt;a&gt;</strong>)</li>
+            </ol>
+            <h2>1. Links de outros sites</h2>
+            <p>Para criar um iframe, use: <code>&lt;iframe&gt;</code></p>
+            <img src="Imagens_das_Paginas/iframe-code.png" alt="Código Iframe">
+            <br>
+            <img src="Imagens_das_Paginas/iframe.image.png" alt="Imagem Iframe">
+            <h2>2. Diretório Local</h2>
+            <p>Pode colocar , no <strong>src=""</strong>, um diretório local, como o caminho de um outro .html.</p>
+            <h2>3. Abrir alguma página no iframe, através de um clique</h2>
+            <p>Se quiser abrir alguma página no iframe, será necessário no <strong>&lt;a href="" target="[name]"&gt;</strong>, em <strong>target=""</strong>, colocar o nome do iframe. Nome do iframe: <code>&lt;iframe src="" name="[colocar um nome]"&gt;</code>. Porém, nesse caso, o <strong>iframe</strong> fica vazio até que seja clicado no link. Então você pode colocar um <strong>src=""</strong> padrão (RECOMENDADO), ou usar <code>srcdoc="[texto]"</code> e dentro dele escrever o código HTML que aparecerá.</p>
+            <p>Entre o <strong>&lt;iframe&gt; &lt;/iframe&gt;</strong> pode colocar algo alterantivo, caso não carregue o iframe em alguns navegadores.</p>
+            <p><strong>OBS: </strong><u>Existem sites que tem proteção contra iframe.</u></p>
+        </li>
+        <hr>
+    </ul>
+
+</body>
+</html>
