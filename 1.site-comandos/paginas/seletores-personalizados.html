@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos - Seletores Personalizados</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <hr>
+    <h1>SELETORES PERSONALIZADOS (ID e CLASS)</h1>
+    <hr>
+    <hr>
+
+    <h2><b>ID e CLASS:</b></h2>
+    <p><b>ID: <code>id= "[nome]"</code></b> é <b>ÚNICO</b></p>
+    <p><b>CLASS: <code>class= "[nome]"</code></b> pode ser <b>VÁRIOS</b></p>
+    <hr>
+    <h2>ID (Identificador) (<span class="simbologia">#</span>):</h2>
+    <ul>
+        <li><b>HTML:</b>
+    
+        <p>No <b>HTML</b>, para criar um identificador na tag, dentro da tag, use: <b><code>id= "[nome]"</code></b></p>
+        <p><b>OBS<sup>1</sup>: </b><u>Não é legal colocar o mesmo <b>id</b> em outras tags. <b>Para isso, use <code>class ="[nome]"</code></b>.</u></p>
+        <p><b>OBS<sup>2</sup>: </b><u><b>id: único; class: pode vários.</b></u></p>
+        <hr>
+
+        <li><b>CSS:</b>
+        <p>E no <b>CSS</b>, use: <b><code>[tag]#[id] {}</code></b></p>
+        <p><b>OBS: </b><u>Se fizer só <b><code>#[id] {}</code></b>, qualquer coisa que tiver o <b>[id]</b> será modificado.</u></p>
+        <hr>
+    </ul>
+    <hr>
+
+    <h2>CLASS (Classe) (<span class="simbologia">.</span>):</h2>
+    <ul>
+        <li><b>HTML:</b>
+        <p>No HTML, para criar uma classe na tag, dentro da tag, use: <b><code>class= "[nome]"</code></b></p>
+        <p><b>OBS<sup>1</sup>: </b><u>Se quiser, pode a mesma <b>class</b> em várias tags diferentes.</u></p>
+        <p><b>OBS<sup>2</sup>: </b><u><b>id: único; class: pode vários.</b></u></p>
+        <hr>
+
+        <li><b>CSS:</b>
+        <p>NO CSS, use: <b><code>[tag].[class] {}</code></b></p>
+        <p><b>OBS: </b><u>Se fizer só <b><code>.[class] {}</code></b>, qualquer coisa que tiver o <b>[class]</b> será modificado.</u></p>
+        <hr>
+    </ul>
+    <p><b>OBS: </b><u>Posso usar várias <b>class</b> em uma mesma tag. Exemplo: <b><code>&lt;h2 class= "[nome1] [nome2]"&gt;</code></b>.</u></p>
+    <hr>
+
+    <h2>Pseudo-Classes (<span class="simbologia">:</span>):</h2>
+    <p>Para colocar uma pseudo-classe, use: <b><code>[tag]:[<abbr title="Pesquise sobre. Exemplo: Quando passar o mouse por cima, fica de uma cor.">informação</abbr>] {}</code></b></p>
+    <p style="font-size: 19px;"><b>OBS:</b><u>Para mexer em alguma <b>tag</b> dentro de outra <b>tag</b>, pode-se usar: <b><code>[tag] &gt; [tag] {}</code></b></u></p>
+    <hr>
+
+    <h2>Pseudo-Elementos (<span class="simbologia"><span>::</span></span>):</h2>
+    <p>Para colocar um pseudo-elemento, use: <b><code>[tag]::[<abbr title="Pesquise sobre. Exemplo: Posso inserir coisas antes ou depois de uma frase.">informação</abbr>] {}</code></b></p>
+    <hr>
+
+    <h2>Tag Filho (<span class="simbologia">&gt;</span>):</h2>
+    <p>Para mexer em alguma <b>tag</b> dentro de outra <b>tag</b>, pode-se usar: <b><code>[tag] &gt; [tag] {}</code></b></p>
+
+</body>
+</html>
+<!-- VER "SPAN"-->

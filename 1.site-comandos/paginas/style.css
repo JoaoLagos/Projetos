@@ -1,0 +1,72 @@
+@charset "UTF=8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+
+
+body {
+    
+    background-image: linear-gradient(to bottom,azure, rgb(164, 206, 209) 95%);
+    text-align: justify; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family: "Fredericka the Great";
+    font-weight: lighter;
+    
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 5px 5px 20px rgb(56, 82, 83);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+h1::before {
+    content: "✩ ";
+}
+
+h1::after {
+    content: " ✩";
+}
+
+h2 {
+    /*color: white;
+    background-color: rgb(111, 144, 146);*/
+    color: white;
+    background-color: black;
+    /*font-family: "Fredericka the Great";
+      font-weight: lighter; */
+
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(56, 82, 83);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:10px;
+    
+}
+
+h2::before {
+    content: "→ ";
+}
+
+span.simbologia {
+    color: aqua;
+}
+
+code {
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+    font-weight: bolder;
+}

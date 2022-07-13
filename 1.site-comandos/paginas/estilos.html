@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos - Estilos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <hr>
+    <h1>ESTILOS</h1>
+    <hr>
+    <hr>
+    <h2>Estilos CSS INLINE (FICA CONFUSO):</h2>
+    <p>Para colocar os estilos, pode-se usar o comando <b><code>style="[parâmetros]; [parâmetros; ... ; [parâmetros]"</code></b> dentro das tags que deseja.</p>
+    <p>Como, por exemplo: <b><code>&lt;h1 style="[parâmetros]; ... ; [parâmetros]"&gt; </code></b>.</p>
+    <p>Porém, o CSS INLINE fica muito confuso, pois terá que fazer em todos os que quiser e fica muito poluído.</p>
+    <p><b>IDEAL PARA ESTILOS PONTUAIS, ESPECÍFICOS.</b></p>
+    <hr>
+
+    <h2>Estilos CSS INTERNO:</h2>
+    <p>Para colocar os estilos de maneira eficiente, use a tag <b><code>&lt;style&gt; <abbr title="body, h1, h2, p, etc.">[tag]</abbr> <abbr title="Dentro de {} pode enserir: background-color, font-size, etc.">{[parâmetros]}</abbr> &lt;/style&gt;</code></b> dentro da tag <b><code>&lt;head&gt;</code></b>.</p>
+    <p>Como pode ser visto na imagem abaixo:</p>
+    <p style="text-align: center;"><img src="Imagens_das_Paginas/css-interno.png" alt="CSS Interno"></p>
+    <p><b>IDEAL PARA ESTILOS DE PÁGINAS LOCAIS.</b></p>
+    <hr>
+
+    <h2>Estilos CSS EXTERNO:</h2>
+    <p>Para colocar o estilos de maneira AINDA MAIS EFICIENTE, é necessário criar um arquivo <b>.css</b>, usualmente chamado de <b>sytle.css</b>.</p>
+    <p>Depois, dentro da tag <b><code>&lt;head&gt;</code></b>, use: <b><code>&lt;link rel="stylesheet" href="[nomedoarquivo].css"&gt;</code></b> OU selecione <b>link:css</b>. Usando esse <b>link</b> dentro da página <b>HTML</b> desejável.</p>
+    <p><b>OBS:</b><u>Talvez seja interessante usar a regra <b>@charset "UTF-8";</b>. Para criar uma regra que possa ter compatibilidade com UFT-8.</u></p>
+    <p>Pode usar vários [arquivo].css caso seja necessário. Pode usar, também, os estilos CSS INLINE, CSS INTERNO e CSS EXTERNO no mesmo HTML, se for necessário.</p>
+    <p><b>IDEAL PARA ESTILOS MUITO GRANDES E QUE SERÁ USADO EM COMUM EM MUITAS PÁGINAS.</b></p>
+</body>
+</html>

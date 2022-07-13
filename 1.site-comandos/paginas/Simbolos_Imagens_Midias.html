@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos - Símbolos, Imagens e Mídias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <hr>
+    <h1>SÍMBOLOS, IMAGENS E MÍDIAS</h1>
+    <hr>
+    <hr>
+
+    <h2>Símbolos especiais:</h2>
+    <p>&lt;, &gt;, &reg;, &copy;, &lg;, &target;, &trade;, &triangle;, &euro;, &pound;, &real;, &yen;, &cent;, &Delta;, &uparrow;</p>
+    <p><b>OBS: </b>Tem no material da aula.</p>
+    <hr>
+
+    <h2>Emojis: </h2>
+    <p>Você deverá entrar no <a href="https://emojipedia.org/" target="_blank"><b>emojipedia.org</b></a>.</p>
+    <p>Logo depois deverá, ou copiar a imagem e jogar dentro do código (pode não funcionar para alguns), ou copiar o ponto de código (Exemplo: U+1F642, então copia o 1F642)</p>
+    <p>🙂 ou &#x1F642; &lt;- Pelo Hexadecimal (VER NO CÓDIGO FONTE)</p> <!-- &#x é para ler número hexadecimais-->
+    <p>🚀 ou &#x1F680; &lt;- Pelo Hexadecimal (VER NO CÓDIGO FONTE)</p>
+    <hr>
+
+    <h2>Favicon (Icone em cima da página, no título, header):</h2>
+    <p>Para colocar o Favicon, use: <b>&lt;link rel="shortcut icon[não sei a definição]" href="[link da imagem .ico]" type="image/x-icon[não sei a definição]"&gt;</b>. Use na aba &lt;head&gt;.</p></p>
+    <p>Para procurar o Favicon, pode usar o site: <a href="https://iconarchive.com/" target="_blank"><b>www.iconarchive.com</b></a>, e baixar a versão ICO.</p>
+    <p>Também pode usar <a href="https://www.favicon.io/" target="_blank"><b>favicon.io</b></a> e <a href="https://www.favicon.cc" target="_blank"><b>favicon.cc</b></a></p>
+    <hr>
+
+    <h2>Imagens: </h2>
+    <p>Para carregar imagens, use: <b>&lt;img src="[link da imagem]" alt="[nome alternativo da imagem (opicional e importante)]" height="[altura (opicional)]" width="[largura (opicional)]" &gt;</b></p>
+    <p>Pode usar outros parâmetros também.</p>
+    <p>Ideal usar um editor de imagem para escolher o tamanho certo (em vez de usar height e width), como GIMP ou Photoshop.</p>
+    <br>
+    <h3>Pode-se pegar imagens em arquivos do PC ou em sites.</h3>
+    <p>Para arquivos em site, o ideal é deixar na mesma pasta do index.html, ai basta digitar o nome do arquivo. Ou colocar em uma pasta, nesse caso deverá indicar a pasta, como: Pasta_Imagens/imagem001.png.</p>
+    <p>Para arquivos na internet, o endereço da imagem.</p>
+    <p><b>OBS:</b> <u>Depois colocar esses três tipos de imagens.</u></p>
+    <hr>
+
+    <h2>Imagens Dinâmicas (em outros aparelhos eletrônicos):</h2>
+    <p>Para abrir uma imagem em vários dispositivos diferentes, ou a imagem variar conforme você mexa no tamanho do navegador, use: <b><code>&lt;picture&gt;</code></b>.</p>
+    <p>E dentro de <b><code>picture</code></b>, insira a imagem usando a tag <b><code>&lt;img&gt;</code></b>.</p>
+    <p>Mas, como queremos usar também para dispositivos diferentes, devemos ter a mesma imagem em tamanho menor. Com isso, basta editar em algum editor de foto (como GIMP ou Photoshop) para tamanhos menores, como, por exemplo, para computadores, tablets ou celulares.</p>
+    <p>Depois, para inserir a imagem desejada em tamanhos menores, devemos usar uma condição. Para isso, use: <b><code>&lt;source media="(<abbr title="Ou min-widht. Depende do que quer fazer">max-width:</abbr>[tamanho máximo da tela])"" srcset="[link da imagem (em tamanho diferente)]" type="[tipo de imagem (como é imagem: image/png OU image/jpeg)]"&gt;</code></b></p>
+    <p align="center"><b>Exemplo abaixo:</b></p>
+    <p align="center"> <img src="Imagens_das_Paginas/codigoImDinamica.png" alt="Código Imagem Dinamica"></p>
+    <p><b>OBS<sup>1</sup>:</b> <u>Os <b><code>&lt;source&gt</code></b> tem que estar em ordem, ou seja, do menor para o maior.</u></p>
+    <p><b>OBS<sup>2</sup>:</b> <u>O <b>width</b> significa largura. Com isso, ajuda no celular caso o usuário deite o seu aparelho. <b>height</b> significa altura.</u></p>
+    <hr>
+
+    <h2>Icones: </h2>
+    <p>Para usar Icones, utilize o <a href="https://fontawesome.com/" target="_blank"><strong>FontAwesome</strong></a>.</p>
+    <p>No <code>&lt;head&gt;</code>, coloque o seu kit (link). E para o ícone, copie o cole o código <code>&lt;i&gt;</code> aonde quiser que ele fique.</p>
+    <br>
+    <p>Também da para baixar um arquivo (download) e chamnar ele no link.</p>
+    <hr>
+
+    <h2>Vídeos:</h2>
+    <ul>
+        <li><b>Vídeos em Hospedagem Própria (PODE SER CARO):</b></li>
+        <p>Para colocar vídeos, use: <b><code>&lt;video src="[link]" <abbr title="Para inserir o botão PLAY">controls</abbr>&gt;</code></b></p>
+        <p>Parâmentros não necessários:</p>
+        <ul>
+            <li><b><code>width="[tamanho do vídeo]"</code></b></li>
+            <li><b><code>poster="[link da imagem para servir de THUMB (poster)]"</code></b></li>
+            <li><b><code>autoplay</code></b>: Inicia o vídeo automaticamente.</li>
+            <li><b><code>loop</code></b>: Fica repetindo o vídeo.</li>
+        </ul>
+        <p>Caso queira utilizar vários tipos de vídeos (pois existem navegadores que não aceitam certos tipos de tipos), use: <b><code>&lt;source&gt;</code></b>. Lembrando a ordem de preferência, de cima para baixo. Como abaixo:</p>
+        <p align="center"><img src="Imagens_das_Paginas/imagem-video.png" alt="Exemplo source em vídeos"></p>
+        <p>Os principais tipos de vídeos são: <b>video/mp4, video/webm e video/ogv</b>. Para consultar essa lista, use: <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><b>https://www.iana.org/assignments/media-types/media-types.xhtml</b></a></p>
+        <p>Para converter os vídeos e deixar mais leve, pode baixar o aplicativo <a href="https://handbrake.fr/" target="_blank"><b>HandBrake</b></a>. Ou usar outros, até mesmo na internet.</p>
+        <hr>
+
+        <li><b>Vídeos em Hospedagem de Vídeos (GRATUITO):</b></li>
+        <p>Para colocar vídeos de um hospeideiro de vídeos, como o YouTube, use: </p>
+        <p><b>OBS<sup>1</sup>:</b> <u>No Youtube, ao escolher o vídeo e clicar em compartilhar, ele já oferece uma Aba Incorporar que cria um código HTML já pronto para o uso. Para isso o cliente pode disponibilizar o vídeo dele no YouTube para que possa ser extraído de lá. E ao invés de usar dados do próprio site, usa o do YouTube.</u></p>
+        <p><b>OBS<sup>2</sup>:</b> <u>Caso queria um vídeo restrito, pode guardar ele no Vimeo.</u></p>
+        <hr>
+    </ul>
+    <hr>
+
+    <h2>Colocar Imagem e Vídeo no Centro:</h2>
+    <p>Para colocar imagem ou vídeo no centro, use: <strong><code>display: block;</code></strong>, para transformar em bloco. E, depois, use: <strong><code>margin: auto;</code></strong></p>
+    <hr>
+
+    <h2>Aúdios:</h2>
+    <p>Para reproduzir áudios, use: <b><code>&lt;audio src="[link]" <abbr title="Para aparecer o ícone para iniciar o áudio">controls</abbr> autoplay&gt;</code></b></p>
+    <p>Existem uns parâmetros, como 
+        <br><b><code>&lt;audio preload:"[configuração]"&gt;</code></b> que as configurações são: <b><abbr title="PERIGOSO: Ele só carrega a página por completo se o áudio também estiver carregado totalmente">auto</abbr>, <abbr title="Carrega algumas coisas como nome, data.">metadata</abbr> e <abbr title="Não carrega nada, só quando o usuário aperta PLAY">none</abbr></b>.
+        <br><b><code>&lt;audio <abbr title="Para aparecer o ícone para iniciar o áudio">controls</abbr>&gt;</code></b>
+        <br><b><code>&lt;audio loop&gt;</code></b> Como o nome diz, ele fica voltando no loop.</p>
+    <p>Mas o código acima é limitado (alguns navegadores não aceitam). Para isso, dentro de <code>&lt;audio&gt;</code>, use: <b><code>&lt;source src"[link]" type="[tipo (para MP3: audio/mpeg)]"&gt;</code></b></p>
+    <p>Existem varios tipos, como, por exemplo, <b>audio/mpeg, audio/ogg, audio/<abbr title="CUIDADO: Áudios desse tipo são pesados">wav</abbr></b>. Para consultar essa lista, use: <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><b>https://www.iana.org/assignments/media-types/media-types.xhtml</b></a></p>
+    <h3 align="center">Os principais são:</h3>
+    <p align="center"><img src="Imagens_das_Paginas/tipolinkdownload.png" alt="midia types"></p>
+    <p>Aí poderá usar vários <code>&lt;source&gt;</code> para outros. Respeitando a ordem, de cima para baixo.</p>
+    <br>
+    <p>Você pode baixar áudios (sons) no YouTube em uma parte reservada para isso. Ou em outros.</p>
+    <p>Geralmente vem em formato MP3: <b>.mp3</b></p>
+    <p><b>OBS:</b> <u>Tome cuidado com os Direitos Autorais. Procure pegar os aúdios que são livres.</u></p>
+    <hr>
+
+    <h2>Iframes (Janelas para outros links):</h2>
+    <p>Para criar um iframe, use: <code>&lt;iframe&gt;</code></p>
+    <img src="Imagens_das_Paginas/iframe-code.png" alt="Código Iframe">
+    <br>
+    <img src="Imagens_das_Paginas/iframe.image.png" alt="Imagem Iframe">
+    <p><strong>OBS: </strong><u>Existem sites que tem proteção contra iframe.</u></p>
+    <hr>
+
+</body>
+</html>

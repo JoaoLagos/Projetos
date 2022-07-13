@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos - Links</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <hr>
+    <h1>LINKS</h1>
+    <hr>
+    <hr>
+
+    <h2>Links Externos:</h2>
+        <p>Para acessar links externos, de fora do seu site, use: <b><code>&lt;a href="[link]"&gt; [texto] &lt;/a&gt;</code></b></p>
+        <p>Com isso, ele abre o link na mesma aba fazendo com que você perca a página anterior. Caso queira abrir em uma outra janela, use dentro de <code>&lt;a&gt;</code>: <b><code>target="_blank"</code></b>.</p>
+        <p>É recomendável que nesses casos use <b><code>rel="external"</code></b> no <code>&lt;a&gt;</code></p>
+        <p>Para usar o <b><code>href="[link]"</code></b>, o <b>link</b> tem que ser em: <b>https://www</b> ou semelhantes, como http</p>
+    <hr>
+
+    <h2>Links Internos:</h2>
+        <p>Para acessar links internos, que servem para acessar as páginas de dentro do nosso prórpio site, use: <b><code>&lt;a href="[arquivo/link/caminho]"&gt; [texto] &lt;/a&gt;</code></b> <b>OBS:</b><u>Se quiser voltar pasta, use: <b><code>target="../[pasta]"</code></b>. A quantidade de pontos é quantas pastas estão voltando. Lembrando que <code>./</code> é na mesma pasta, então começa na <code>../</code>. Já na pasta seguinte, apenas: <b><code>target="[pasta]/[arquivo]"</code></b></u></p>
+        <p>Nesses casos talvez não precise usar o <b><code>target="_blank"</code></b>, e nem <b><code>rel="external"</code> (já que é interno)</b>. Mas se quiser, pode usar: <b><code>target="_self"</code></b>.</p>
+        <p>Mas caso seja para voltar a pagina ou avançar para próxima página, pode usar: <b><code>rel="prev"</code> (para voltar a página)</b> ou <b><code>rel="next"</code> (para avançar para próxima página)</b>. Lembrando: Usa-se dentro do <code>&lt;a&gt;</code></p>
+    <hr>
+
+    <h2>Links para Downloads:</h2>
+        <p>Para usar links que dê para efetuar downloads, use: <b><code>&lt;a href="[link/arquivo/caminho]" download="[nome do arquivo]" type="[tipo do arquivo]"&gt; [texto] &lt;/a&gt;;</code></b></p>
+        <br>
+        <p>No <b><code>type="[tipo de arquivo]"</code></b>, o <b>tipo de arquivo</b> você pode verificar em: <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"><b>https://www.iana.org/assignments/media-types/media-types.xhtml</b></a></p>
+        <h3 align="center">Os principais são:</h3>
+        <p align="center"><img src="Imagens_das_Paginas/tipolinkdownload.png" alt="midia types"></p>
+    <hr>
+    <br>
+    <h3 style="text-align: center;">Sobre rel="[informação]":</h3>
+    <p style="text-align: center;"><u>Caso queira saber mais sobre o rel="[informação]", pesquisar na internet. Pois existem vários outros tipos como, por exemplo, sites dúvidosos ou sem aval seu, que usa: <b><code>rel="nofollow".</code></b></u></p>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos - Fontes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <hr>
+<h1>FONTES</h1>
+<hr>
+<hr><br><hr>
+
+<h2>Tipos de Fontes:</h2>
+<p style="text-align: center;"><img src="Imagens_das_Paginas/tipos-de-fonte.png" height="400px" alt="Tipos de Fonte"></p>
+<p>Pode usar fontes externas como a do Google para fazer a busca, bem como as fontes do CSS.</p>
+<ul>
+    <li><b>Google Fonts:</b>
+    <a href="https://fonts.google.com/" target="_blank">www.fonts.google.com</a>
+    <p>Tem que importar o tipo e colocar dentro do <b>&lt;style&gt;</b> ou no <b>.css</b>.</p>
+    <hr>
+    <li><b>Fontes Externas Baixadas, como Dafont:</b>
+        <a href="https://www.dafont.com/pt/" target="_blank">www.dafont.com</a>
+        <p>Se vier um arquivo <b>.otf</b> ou <b>.ttf</b>, vai ser necessário ultilizar, dentro de <b>&lt;style&gt;</b>, o <b>@font-face{font-family: ; src : url("[pasta/arquivo]")}</b>, como na imagem abaixo:</p>
+        <p style="text-align: center;"><img src="Imagens_das_Paginas/font-face.png" alt=""></p>
+        <p><b>OBS<sup>1</sup>: </b><u>No <b>fonte-family</b> pode escolher o nome que quiser.</u></p>
+        <p><b>OBS<sup>2</sup>: </b><u>Pode-se usar os parâmetros normais, como <b>font-weight, font-style, etc.</b></u></p>
+        <hr>
+        <li><b>Fontes de um site:</b>
+        <p>Para pegar fonte de alugm site ou algum lugar no seu navegador, pode baixar o <b><a href="https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh" target="_blank">Fonts Ninja</a></b> e usar na extensão do Google Chrome.</p>
+        <li><b>Fontes de uma imagem:</b>
+            <p>Para pegar fonte de alguma imagem, pode usar os seguintes sites:</p>
+            <ul>
+                <li><a href="https://www.whatfontis.com/" target="_blank">whatfontis.com</a> (O MELHOR)
+                
+                <li><a href="https://www.fontsquirrel.com/" target="_blank">fontsquirrel.com</a>
+                
+                <li><a href="https://www.myfonts.com/" target="_blank">myfonts.com</a>
+            </ul>
+</ul>
+<hr>
+
+<h2>Famílias de Fonte (font-family):</h2>
+<p>Para mudar a letra, use: <b><code>font-family: [nome da fonte];</code></b></p>
+<p><b>OBS:</b><u> Pode usar mais de uma fonte, caso o dispositivo não reconheça a primeira. Para isso é importante ver quais cores combinam. As <b>Web safe font combinations.</b></u></p>
+<hr>
+
+<h2>Tamanho da Fonte (font-size):</h2>
+<p>Para mudar o tamanho, use: <b><code>font-size: [<abbr title="Dê preferência por px (pixel) ou em (tamanho relativo)">tamanho</abbr>];</code></b></p>
+<hr>
+
+<h2>Peso da Fonte ("Largura"):</h2>
+<p>Para mudar o peso da fonte, use: <b><code>font-weight: [valor];</code></b></p>
+<p>Pode usar o nome ou a numeração, de 100 à 900, como visto abaixo:</p>
+<p style="text-align: center;"><img src="Imagens_das_Paginas/peso-da-fonte.png" alt="Peso da Fonte">
+</p>
+<hr>
+
+<h2>Estilo da Fonte:</h2>
+<p>Para mudar o estilo da fonte, use: <b><code>font-style: [estilo];</code>
+</b></p>
+<hr>
+
+<h2>Decoração da Fonte:</h2>
+<p>Para decorar sua fonte, como sublinhado, use: <b><code>text-decoration: [decoração];</code></b></p>
+<hr>
+
+<h2>Alinhamento:</h2>
+<p>Para alinhar o texto, na tag <b>&lt;style&gt;</b> ou no <b>.css</b>, use: <b><code>text-align: [<abbr title="right, left, center, justify">informação</abbr>];</code></b></p>
+<hr>
+
+<h2>Recuo de Parágrafo:</h2>
+<p>Para colocar recuo, na tag <b>&lt;style&gt; ou no <b>.css</b></b>,use: <b><code>text-indent: [medida];</code></b></p>
+<hr>
+
+<h2>Shorthand Font:</h2>
+<p>Para condensar todos esses parâmetros para a fonte, pode-se usar algo encurtado. Para isso, use: <b><code>font: [style (estilo)] [weight (largura)] [size (tamanho)] [<abbr title="Nesse caso, pode-se separar os vários tipos de famílias por ,">family (famílias)</abbr>]</code></b></p>
+<p><b>OBS<sup>1</sup>:</b><u> Separa os parâmetros com espaço.</u></p>
+<p><b>OBS:<sup>2</sup>:</b><u> Pode deixar em branco o que não for usar, mas tem que seguir essa ordem.</u></p>
+<p style="text-align: center;"><img src="Imagens_das_Paginas/shorthand-font.png" alt=""></p>
+<hr>
+
+</body>
+</html>

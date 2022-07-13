@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentos - Cores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <hr>
+    <h1>CORES</h1>
+    <hr><hr>
+    <h2>Formas de escrever as cores:</h2>
+    <ul>
+        <li><b>Nome:</b>
+       <ul>
+            <li>Escrever o nome da cor. Por exemplo: <b>green, black, white, blue, etc.</b>
+       </ul>
+    <hr>
+        <li><b>Hexadecimal:</b>
+        <ul>
+            <li> Escrever em códigos hexadecimais. Por exemplo: <b>#0000ff, #ffffff, etc.</b>
+        </ul>
+    <hr>
+        <li><b>RGB:</b>
+        <ul>
+            <li> RGB (Red, Green, Blue). Por exemplo: <b>rgb(0, 0, 255), rbg(255, 255, 255), etc.</b>
+        </ul>
+    <hr>
+        <li><b>HSL:</b>
+        <ul>
+            <li> HSL (Hue, Sturation, Luminosity). Por exemplo: <b>hsl(240, 100% 50%), hsl(0, 0%, 100%), etc.</b>
+        </ul>
+    <hr>
+        <li><b>Adicionando Transparência:</b>
+        <ul>
+            <li>Para adicionar transparência, basta usar "<b>a</b>" em rbg<b>a</b> ou hsl<b>a</b>
+        </ul>
+    </ul>
+<hr>
+
+<h2>Cores Cromáticas:</h2>
+<p style="text-align: center;"><img src="Imagens_das_Paginas/corescromaticas.png" alt="Cores Cromáticas"></p>
+<p>Para saber mais sobre as cores cromáticas e seu uso, veja o <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/13%20-%20Cores.pdf" target="_blank">PDF: 13 - cores</a></p>
+<ul>
+    <li><b>Paleta de Cores:</b>
+    <p>Para acessar uma paleta de cores que te ajude na coloração do seu site, fazendo com que as cores sejam relacionadas, entre no site: <b><a href="https://color.adobe.com/pt/create">https://color.adobe.com/pt/</a></b>.</p>
+    <p>Também pode recorrer ao site: <b><a href="https://paletton.com/" target="_blank">paletton.com</a></b></p>
+    <p>Também tem o site: <b><a href="https://coolors.co/">coolors.co</a></b></p>
+    <li><b>Pegar cor de algum lugar:</b>
+    <p>Para pegar a cor de algum site ou algum lugar no navegador, pode baixar o <a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=pt-BR" target="_blank"><b>ColorZilla</b></a> e usar na extensão do Google Chrome.</p>
+</ul>
+<hr>
+
+<h2>Degradê:</h2>
+<p>Para usar o degradê, use o parâmetro <b><code>background-image: [parâmetro]</code></b> dentro da <abbr title="body, h1, h2, p, etc.">[tag]</abbr> que deseja na tag <b><code>&lt;style&gt;</code></b>.</p>
+<br>
+<p><b>Parâmetros:</b>
+    <ul>
+        <li><b>linear-gradient:([<abbr title="to right, to left. (PODE COLOCAR ÂNGULO TAMBÉM, COMO: 45deg)">para onde</abbr>], [de que cor], [para que cor])</b>
+        <ul>
+            <li>Se no <b>[para onde]</b> for usar <b>to top</b> ou <b>to bottom</b>, deve-se criar um seletor global <b>*</b>, dentro de style, e dentro colocar <b>height: 100%</b>. Como exemplo abaixo:
+                <p><img src="Imagens_das_Paginas/seletor-global.png" alt="Seletor Global"></p>
+            <hr>
+            <li>No <b>[de que cor] [para que cor]</b>, pode colocar várias cores, dizendo o caminho de cores que deve percorrer para formar o degradê.</li>
+        </ul>
+        <hr>
+        <li><b>gradial-gradient([<abbr title="circle">forma</abbr>],[de que cor], [para que cor])</b></li>
+        <hr>
+    </ul>
+    <p><b>OBS<sup>1</sup>:</b><u>Use <b>background-attachment: fixed;</b> para corrigir o erro do degradê e deixá-lo fixo.</u></p>
+    <p><b>OBS<sup>2</sup>:</b><u>Pode colocar % na cor para regular. Por exemplo: <b>background-image: linear-gradient(to right, [cor1] 10%, [cor2],50%, [cor3])</b></u></p>
+    
+</p>
+
+<hr>
+</body>
+</html>

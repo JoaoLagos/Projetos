@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos - Caixas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <hr>
+    <header>
+        <h1>CAIXAS</h1>
+    </header>
+    <hr>
+    <hr>
+    <main>
+        <h2>Introdução:</h2>
+        <p style="text-align: center;"><img width="300px" src="Imagens_das_Paginas/caixas.png" alt="Caixas"></p>
+        <hr>
+        <h2>Block ou Inline-Block:</h2>
+        <p>Em geral essa configuração vem padrão de cada tag. Mas se quiser mudar, use: <b><code>display: [parâmetro];</code></b></p>
+        <p>Se você usar <b>display: flex</b>, pode dizer a orientação dele: <b>flex-direction: [<abbr title="row, column">parâmetro</abbr>];</b></p>
+        <hr>
+        <h2>Padding:</h2>
+        <p>Espaçamento ao redor de um elemento (distância entre um elemento e a borda). Para usar, no .css, use: <b><code>padding</code></b></p>
+        <p>Para simplificar, usando as principais, pode usar: <b><code>padding: [top] [right] [bottom] [left];</code></b></p>
+        <p style="text-align: center;"><img src="Imagens_das_Paginas/padding.png" alt="Padding"></p>
+        <p><b>OBS<sup>1</sup>: </b><u>Se as quatro forem iguais, pode simplificar por <b>padding: [tamanho universal] -> padding: 10px</b>, nesse exemplo.</u></p>
+        <p><b>OBS<sup>2</sup>: </b><u>Se colocar dois elementos, como <b>padding: [tamanho1] [tamanho2]</b>, <b>tamanho 1 = top/bottom e tamanho2 = right/left</b>.</u></p>
+        <hr>
+        <h2>Border:</h2>
+        <p>É a borda da caixa. Para colocar, no .css, use: <b><code>border</code></b></p>
+        <p>Para simplificar, usando as principais, pode usar: <b><code>border: [width] [style] [color];</code></b></p>
+        <p style="text-align: center;"><img src="Imagens_das_Paginas/border.png" alt="Border"></p>
+        <hr>
+        <h2>Margin:</h2>
+        <p>É a margem da caixa. Para colocar, no .css, use: <b><code>margin</code></b></p>
+        <p>Para simplificar, usando as principais, pode usar: <b><code>margin: [top] [right] [bottom] [left];</code></b></p>
+        <p style="text-align: center;"><img src="Imagens_das_Paginas/margin.png" alt="Margin"></p>
+        <p><b>OBS<sup>1</sup>: </b><u>Se as quatro forem iguais, pode simplificar por <b>margin: [tamanho universal] -> margin: 10px</b>, nesse exemplo.</u></p>
+        <p><b>OBS<sup>2</sup>: </b><u>Se colocar dois elementos, como <b>margin: [tamanho1] [tamanho2]</b>, <b>tamanho1 = top/bottom e tamanho2 = right/left</b>.</u></p>
+        <hr>
+        <h2>Outline:</h2>
+        <p>Para colocar outline (entre a margem e a borda), use: <b><code>outline: [width] [style] [color];</code></b></p>
+        <p style="text-align: center;"><img src="Imagens_das_Paginas/outline.png" alt="Outline"></p>
+        <p>Para simplificar, usando as principais, pode usar: <b><code>outline: [width] [style] [color]</code></b></p>
+        <hr>
+        <h2>Grouping Tags:</h2>
+        <p> Voce pode usar <b><code>&lt;div id="[<abbr title="cabecalho, conteúdo, menu, seção, artigo, aside, rodapé">texto</abbr>]"&gt;</code></b></p>
+        <p><b>Porém</b>, no HTML5, existe outra maneira (mais semântica) de fazer isso, com:</p>
+        <ul>
+            <li><b>&lt;header&gt;</b> (cabeçalho)
+            <li><b>&lt;main&gt;</b> (conteúdo)
+            <li><b>&lt;nav&gt;</b> (menu)
+            <li><b>&lt;section&gt;</b> (seção)
+            <li><b>&lt;article&gt;</b> (artigo)
+                <li><b>&lt;aside&gt;</b>(<abbr title="Não sei o significado">?aside?</abbr>)
+            <li><b>&lt;footer&gt;</b> (rodapé)
+        </ul>
+        <hr>
+
+        <h2>Sombras nas Caixas:</h2>
+        <p>Para colocar sobras nas caixas, tags, use: <strong><code>box-shadow: [horizontal] [vertical] [espalhamento] [cor];</code></strong></p>
+        <p>Pode usar DevTools para mexer na sombra.</p>
+        <hr>
+
+        <h2>Arredondar as bordas das Caixas:</h2>
+        <p>Para colocar uma borda arredondada, use: <strong><code>border-radius: [tamanho]</code></strong></p>
+        <hr>
+
+        <h2>Conteúdo dentro das Caixas:</h2>
+        <p>Para organizar o conteúdo dentro das caixas, use: <strong><code>justify-content: [parâmetro];</code></strong></p>
+        <p>Também tem o <strong><code>align-content: [parâmetro];</code></strong></p>
+        <hr>
+
+        <h2>Colocar Bloco/Caixa no Centro:</h2>
+        <p>Para colocar o Bloco/Caixa no centro, use: <strong><code>margin: auto;</code></strong>. Caso não seja um bloco/caixa, mude com <strong>display: block;</strong></p>
+        <hr>
+
+        <h2>Tamanho Máximo e Mínimo de uma Caixa:</h2>
+        <ul>
+            <li>Para colocar um <strong>tamanho máximo</strong> numa caixa, use: <strong><code>max-<abbr title="ou height">width: [parâmetro];</abbr></code></strong></li>
+            <li>Para colocar um <strong>tamanho mínimo</strong> numa caixa, use: <strong><code>min-<abbr title="ou height">width: [parâmetro];</abbr></code></strong></li>
+        </ul>
+        <hr>
+
+        <h2>Espaçamento da linha das frases (de uma mesma tag) dentro de um Bloco/Caixa:</h2>
+        <p>Para espaçar as linhas das frases, use: <strong><code>line-height: [parâmetro];</code></strong></p>
+        <hr>
+
+        <h2>Centralização de Caixa:</h2>
+        <p>Para centralizar as caixas, veja o <a href="pdf-paginas/19 - Imagens de Fundo.pdf" target="_blank">PDF</a>. Nele é usado conceitos de <b>position: relative</b> e <b>position: absolute</b>.</p>
+        <p>Mas existe uma outra forma melhor através do <b>FlexBox</b>.</p>
+        <hr>
+    </main>
+    
+</body>
+</html>

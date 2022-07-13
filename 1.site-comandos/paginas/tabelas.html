@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos - Tabelas</title>
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <hr>
+    <h1>TABELAS</h1>
+    <hr>
+    <hr>
+    <ul>
+        <li class="topic t1"><h2 class="title-topic">Criação de uma tabela:</h2> <!-- CREATE-TABLE -->
+            <p>Para criar uma tabela, use: <code>&lt;table&gt;</code></p>
+            <p>Dentro da tabela possui hierarquia como visto abaixo:</p>
+            <ul>
+                <li>&lt;table&gt; (PEQUENA)
+                <ul>
+                    <li>&lt;tr&gt; (Table Row)</li>
+                    <ul>
+                        <li> &lt;th&gt; (Table Header)</li>
+                        <li>&lt;td&gt; (Table Data) -> O conteúdo, informação</li>
+                    </ul>
+                </ul>
+                </li>
+                <br>
+                <li>&lt;table&gt; (GRANDE), mas se quiser usar em pequena, pode também
+                <ul>
+                    <li>&lt;thead&gt;</li>
+                    <ul>
+                        <li>tr, th, td</li>
+                    </ul>
+                    <li>&lt;tbody&gt;</li>
+                    <ul>
+                        <li>tr, th, td</li>
+                    </ul>
+                    <li>&lt;tfoot&gt;</li>
+                    <ul>
+                        <li>tr, th, td</li>
+                    </ul>
+                </ul>
+                </li>
+            </ul>
+        </li> 
+
+        <hr class="hr-sep-divs">
+
+        <li class="topic t2"><h2 class="title-topic">Colar os dados da tabela (um do lado do outro):</h2> <!-- COLAR DADOS TABELA -->
+            <p>Por padrão, os dados vem separados. Para colar os dados da tabela, no CSS dentro de table {}, use: <code>border-collapse: [parâmetro];</code></p>
+            <p>Parâmetros:</p>
+            <ul>
+                <li><strong>separate:</strong> Default</li>
+                <li><strong>collapse:</strong> Junta (cola), um do lado do outro, na tebela</li>
+            </ul>
+        </li> 
+
+        <hr class="hr-sep-divs">
+
+        <li class="topic t3"><h2 class="title-topic">Alinhamento dos dados da tabela:</h2> <!-- ALINHAMENTO DADOS TABELA --> 
+            <p>Para alinhar horizontalmente é fácil, só usar <code>text-align: [parâmetro];</code>. Mas para alinhar verticalmente, use: <code>vertical-align: [parâmetro];</code></p>
+        </li>
+
+        <hr class="hr-sep-divs">
+
+        <li class="topic t3"><h2 class="title-topic">Caption (Legenda) e Escopo de Títulos da tabela:</h2> <!-- LEGENDA E ESCOPO DE TÍTULOS -->
+            <p>Para ter um título na tabela, use: <code>&lt;caption&gt;</code></p>
+            <img src="Imagens_das_Paginas/caption.png" alt="Uso do caption">
+            <p>Para referenciar um título (dizer ao que ele se refere), use: <code>&lt;th scope="[<abbr title="col, row, colgroup, rowgroup">parâmetro</abbr>]"&gt;</code></p>
+            <p>Parâmetros scope:</p>
+            <ul>
+                <li><strong>col:</strong> Referência da coluna</li>
+                <li><strong>row:</strong> Referência da linha</li>
+                <li><strong>colgroup:</strong> Referência do grupo de colunas, ou seja, caso haja um título mesclado e precise referenciá-lo para um grupo de colunas (mais de uma coluna),.</li>
+                <li><strong>rowgroup:</strong> Referência do grupo de linhas, ou seja, caso haja um título mesclado e precise referenciá-lo para um grupo de linhas (mais de uma linha).</li>
+            </ul>
+        </li>
+
+        <hr class="hr-sep-divs">
+
+        <li class="topic t4"><h2 class="title-topic">Efeito Zebrado nas Tabelas:</h2> <!-- EFEITO ZEBRADO -->
+            <p>Para criar o efeito zebrado, deve-se usar a pseudo-classe <b>nth-child</b> em <strong>tr</strong>> Para isso, use: <code>tr:nth-child(<abbr title="Insira o número de distância dos zebrados: 2, 3, 4, etc.">#</abbr>n){}</code></p>
+            <img src="Imagens_das_Paginas/efeito-zebrado-code.png" alt="Código Efeito Zebrado">
+            <br>
+            <img src="Imagens_das_Paginas/efeito-zebrado-imagem.png" alt="Imagem Efeito Zebrado">
+            <br>
+            <p>Nesse caso, colore as linhas. Caso queira colorir as colunas, terá que usar o <b>colgroup</b>. Como na imagem abaixo:</p>
+            <img src="Imagens_das_Paginas/colgroup-code.png" alt="Código Colgroup">
+            <p>E dentro de <code>&lt;colgroup&gt; -> &lt;col class="[nome]"&gt;</code>, no <strong>CSS</strong>, passar as informações.</p>
+            <p>Caso queira duas colunas com a mesma configuração, pode usar em vez de 4 <strong>&lt;col&gt;</strong>, usar 3 <strong>&lt;col&gt;</strong> e nas duas colunas que tem que ter a mesma configuração usar <code>span: "[#]"</code>.</p>
+            <p>Depois ficará da seguinte maneira, caso queira colorir a coluna dos nomes (a primeira) com a cor verde:</p>
+            <img src="Imagens_das_Paginas/colgroup-image.png" alt="Imagem Colgroup">
+        </li>
+
+        <hr class="hr-sep-divs">
+
+        <li class="topic t5"><h2 class="title-topic">Cabeçalho Fixo:</h2> <!-- CABEÇALHO FIXO -->
+            <p>Para isso, primeiro a tabela precisa ter posicionamento relativo, ou seja, <strong>position: relative;</strong>, depois coloque os títulos do cabeçalho em posição sticky, <strong>position; sticky;</strong> onde ele vai ficar, como <strong>top: 0;, e o background, pois essa informação é perdida.</strong></p>
+            <img src="Imagens_das_Paginas/cabecalho-fixo-code.png" alt="Código Cabeçalho Fixo">
+        </li>
+
+        <hr class="hr-sep-divs">
+
+        <li class="topic t6"><h2 class="title-topic">Mesclagem de Células:</h2> <!-- MESCLAGEM DE CÉLULAS -->
+            <p>Para expandir um célula, na linha ou na coluna, para que ela venha ocupar mais de um espaço, <use:str><abbr title="col, row">###</abbr>span="[quantidade]"</use:str></p>
+            <p>Parâmetros:</p>
+            <ul>
+                <li><strong>colspan="[quantidade]": </strong>Se for expandir para coluna</li>
+                <li><strong>rowspan="[quantidade]": </strong>Se for expandir para linha</li>
+            </ul>
+        </li>
+
+        <hr class="hr-sep-divs">
+
+        <li class="topic t7"><h2 class="title-topic">Tabelas Responsivas</h2> <!-- TABELAS RESPONSIVAS -->
+            <p>Para ter uma tabela responsiva que se adapte a tela, pode colocar a tabela dentro de uma div, por exemplo: <code>&lt;div&gt;&lt;table&gt;&lt;/table&gt;&lt;/div&gt;</code></p>
+            <p>E, depois, colocar as configurações no <strong>CSS</strong> da div referente à tabela.</p>
+            <p>Uma configuração boa para se usar nesse caso é o <strong>overflow: [parâmetros];</strong></p>
+            <p>Parâmetros overflow:</p>
+            <ul>
+                <li><strong>auto:</strong> Ele faz a rolagem, MAS só do elemento div (e não da página inteira).</li>
+                <li><strong>scroll:</strong> Parecido com o <strong>auto</strong>.</li>
+            </ul>
+        </li> 
+
+        <hr class="hr-sep-divs">
+
+    </ul>
+</body>
+</html>
