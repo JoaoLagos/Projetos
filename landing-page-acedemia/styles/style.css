@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.795)),  url(../components/imgs/background-body.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* HEADER */
+
+header {
+    background-color: rgba(0, 0, 0, 0.219);
+    height: 8vh;
+    width: 100vw;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo {
+    color: rgb(187, 187, 65); 
+    font-weight: bolder;
+    text-shadow: 1px 1px 10px gray;
+    letter-spacing: 2px;
+    }
+
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 18px;
+
+}
+
+.nav-header .link-header {
+    text-decoration: none;
+    color: white;
+}
+.nav-header .link-header:hover {
+    font-weight: bolder;
+    color: rgb(187, 187, 65);
+    
+
+}
+
+/***************** FIM-HEADER *****************/
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    gap: 80px;
+    text-align: center;
+    color: white;
+    
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mensagem-principal {
+    font-size: 48px;
+    text-shadow: 1px 1px 2px white;
+    
+}
+
+.mensagem-secundaria {
+    font-size: 20px;
+    color: rgb(165, 165, 165);
+    
+}
+
+.nav-main {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+}
+
+.nav-main .link-main {
+    font-weight: bolder;
+    width: 250px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid;
+    border-radius: 10px;
+    
+}
+.nav-main .link-main:hover {
+    border: 1px solid rgb(187, 187, 65);
+    background-color: gray;
+    color: rgb(187, 187, 65);
+    transition: 0.3s;
+}
+
+/******************* FIM-MAIN *******************/
