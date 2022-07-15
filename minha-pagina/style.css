@@ -4,17 +4,32 @@
 
 /*GLOBAL*/
 * {
+    margin: 0;
+    box-sizing: border-box;
     text-decoration: none;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body {
-    background-image: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    /*background-image: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);*/
+
+    /* 
+    Retirado, pois, como 68.15deg, ele começa em baixo e devido ao tamanho do body (seja ele 100% ou 100vh), dá incompatibilidade, ou seja:
+
+    100% -> Fica uma parte (em baixo) em branco
+    100vh -> Quando diminuimos o tamanho da tela, o background-image se repete no eixo Y
+    */
+    /* CORRIGIR DEPOIS. Pode ser com @media */
+
+    background-image: linear-gradient(to right, #2F2325 16.62%, #8E5D52 85.61%);
+    
+    
+    
     
     margin: auto;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 
@@ -26,12 +41,13 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 8vh;
     
 }
 
 header > h1.titulo-header {
     padding: 0;
-    margin: 0;
+    margin: auto 30px;
     
     color: rgb(218, 214, 214);
     font-family: Lobster;
@@ -41,7 +57,7 @@ header > h1.titulo-header {
 }
 
 header > nav {
-    margin: auto 0;
+    margin: auto 30px;
 
     
 }
@@ -67,20 +83,33 @@ hr {
 }
 
 /* MAIN */
+main {
+    height: 84vh;
+}
 div.conteudo-principal {
     text-align: center;
 
 }
 
+.conteudo-principal img {
+    max-height: 430px;
+    height: 100vw;
+}
+
 
 div.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     font-size: 20px;
 
 }
 
 hr.divisao-pequena {
+    margin: 16px 0px;
     width: 300px;
+    align-self: center;
+    
     
 }
 
@@ -90,10 +119,12 @@ p {
 }
 
 ul {
-    margin-top: 50px;
-    text-align: left;
+    margin: 50px auto 0px auto;
+    text-align: justify;
 }
 /********************************************************************************/
+
+/* FOOTER */
 
 
 
