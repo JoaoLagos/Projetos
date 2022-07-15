@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/******************************* DIV-ONE *******************************/
+/*Pode ser encontrada mais abaixo, em TAGS UNIVERSAIS div.inicio-fim*/
+/**********************************************************************/
+
+/******************************* DIV-TWO *******************************/
+div.two {
+    text-align: center;
+    background-color: #f4f4f4;
+}
+/***********************************************************************/
+
+/******************************** DIV-THREE ********************************/
+div.three{
+    background: linear-gradient(rgba(167, 165, 165, 0.4), rgba(167, 165, 165, 0.4)),url(../components/imgs/bg-div-three.jpg);
+    height: 400px;
+}
+/****************************************************************************/
+
+/**************************** DIV-FOUR ****************************/
+/* DIV SIMPLES - Então você acha a configuração dela mais abaixo, em TAGS UNIVERSAIS .section-dark */
+/******************************************************************/
+
+/**************************** DIV-FIVE ****************************/
+div.five{
+    background:linear-gradient(rgba(167, 165, 165, 0.4), rgba(167, 165, 165, 0.4)), url(../components/imgs/bg-div-five.jpg);
+    height: 400px;
+}
+/******************************************************************/
+
+/**************************** DIV-SIX****************************/
+/* DIV SIMPLES - Então você acha a configuração dela mais abaixo, em TAGS UNIVERSAIS .section-dark */
+/******************************************************************/
+
+
+
+
+
+
+/* TAGS UNIVERSAIS */
+/* Configuração dos parallax */
+div.parallax {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+
+    color: white;
+}
+/* Configuração dos h2 dentro dos parallax */
+div.parallax > h2 {
+    margin: auto auto;
+    letter-spacing: 10px;
+}
+
+/* Configuração de centralização do texto das seções e padding das seções */
+section {
+    text-align: center;
+    padding: 60px 60px;
+    word-spacing: 3px;
+    line-height: 30px;
+}
+
+/* Configuração do margin-bottom dos h3 das seções */
+section > h3 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    
+}
+
+/* Configuração da cor de fundo e cor da seção dark */
+.section-dark {
+    background-color: #282e34;
+    color: rgba(255, 255, 255, 0.808);
+}
+
+div.inicio-fim {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(rgba(167, 165, 165, 0.4), rgba(167, 165, 165, 0.4)), url(../components/imgs/bg-div-one.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+div.inicio-fim h1 {
+    font-weight: lighter;
+    padding: 20px;
+    text-align: center;
+    margin: auto auto;
+    letter-spacing: 7px;
+    word-spacing: 10px;
+    
+    color: white;
+    background-color: rgb(88, 88, 88);
+}
+/******/
