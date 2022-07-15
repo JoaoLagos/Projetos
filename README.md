@@ -15,6 +15,7 @@
     <li><a href="https://joaolagos.github.io/Projetos/redes-sociais">redes-sociais</a>
     <li><a href="https://joaolagos.github.io/Projetos/site-android-1">site-android-1</a>
     <li><a href="https://joaolagos.github.io/Projetos/site-informatica">site-informatica</a>
+    <li><a href="https://joaolagos.github.io/Projetos/spotify-clone">spotify-clone</a>
  </ol>
 
 
