@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos - Formulários</title>
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <hr>
+    <h1>FORMULÁRIOS</h1>
+    <hr>
+    <hr>
+    <ul>
+        <li class="topic t1"><h2 class="title-topic">Criação de um formulário:</h2> <!-- CRIAÇÃO FORMULÁRIO -->
+            <p>Para criar um formulário, use: <code>&lt;form&gt;</code></p>
+            <p>Para criar caixas de entrada de dados, dentro do <strong>form</strong>, use: <code>&lt;input&gt;</code>. Dentro do <strong>input</strong> existem algumas informações a serem especificadas. Será visto no próximo tópico.</p>
+        </li>
+        <hr>
+
+        <li class="topic t2"><h2 class="title-topic">Input:</h2> <!-- INPUT -->
+            <p>Para usar o input, use: <code>&lt;input type="[parâmetro]" name=[informação]" id="[informação]"&gt;</code></p>
+            <p>O <strong>parâmetro</strong> é para especificar que tipo de entrada vamos ter, por exemplo:</p>
+            <ul>
+                <li><strong>text:</strong> GENÉRICO. Pode inserir qualquer texto.</li>
+                <li><strong>e-mail:</strong> Para indicar que será escrito um endereço de e-mail.</li>
+                <li><strong>password:</strong> Para indicar que será escrito uma senha.</li>
+                <li><strong>submit:</strong>Para inserir o botão de enviar (SUBMIT). <strong>Nesse caso há uma OBSERVAÇÃO: Além do name="" e id="", caso queira escrever algo dentro desse botão (pois por padrão ele é vazio), use: <code>value="[mensagem]"</code></strong>.</li>
+                <li><strong>E entre outros.</strong></li>
+            </ul>
+        </li>
+        <hr>
+
+        <li class="topic t3"><h2 class="title-topic">Label:</h2> <!-- LABEL -->
+            <p>Para linkar a caixa (<strong>input</strong>) com o texto de referência, use: <code>&lt;label for="[<abbr title="O id do input">id</abbr>]"&gt;</code></p>
+        </li>
+
+        <li class="topic t4"><h2 class="title-topic">Autocomplete:</h2> <!-- AUTOCOMPLETE -->
+            <p>Se quiser desligar o efeito abaixo, dentro de <strong>form</strong>, use: <code>autocomplete = "off"</code></p>
+            <img src="Imagens_das_Paginas/form-autocomplete.png" alt="">
+        </li>
+        <hr>
+
+        <li class="topic t5"><h2 class="title-topic">Envio do formulário:</h2> <!-- ENVIO DO FORMULÁRIO -->
+            <p>Para enviar o formulário, dentro de <strong>form</strong>, use: <code>action= "[para onde vai enviar]"</code></p>
+            <p>Por exemplo: <strong>&lt;form action="cadastro.py"&gt; </strong></p>
+        </li>
+        <hr>
+    
+</body>
+</html>
