@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "nunito";
+    src: url(../components/fonts/nunito/Nunito-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url(../components/fonts/raleway/Raleway-VariableFont_wght.ttf) format("truetype");
+}

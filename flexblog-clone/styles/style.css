@@ -1,0 +1,390 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "nunito", "raleway", Arial, Helvetica, sans-serif;
+}
+
+/* SITE FEITO COM POUCOS CONHECIMENTOS EM DISPLAY e SEM CONHECIMENTOS EM MEDIAQUERY */
+
+/******************** HEADER ********************/
+header {
+    display: flex;
+    flex-direction: column;
+}
+/*** DIV TOPO ***/
+header div.topo-bg {
+    background-color: #122ab2;
+}
+
+header div.topo {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap; /*Quebra para linha de baixo se ficar apertado*/
+    justify-content: space-between;
+    padding: 10px;
+    margin: auto auto;
+}
+
+header div.topo p {
+    color: white;
+}
+
+header div.topo a {
+    text-decoration: none;
+    color: white;
+}
+/* FIM DIV TOPO */
+
+/*** DIV BAIXO ***/
+header div.baixo-bg {
+    background-color: #2c70ff;
+}
+
+header div.baixo {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap; /*Quebra para linha de baixo se ficar apertado*/
+    justify-content: space-between;
+    padding: 10px;
+    margin: auto auto;
+}
+
+header div.baixo a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    margin: auto 0;
+    font-size: 2.5em;
+    font-weight: bolder;
+
+}
+
+.header-menu {
+    margin: auto 0;
+}
+
+.header-menu .list-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header-menu .list-menu a:hover {
+    color: #122ab2;
+}
+/****************** FIM HEADER ******************/
+
+/******************** MAIN ********************/
+main{
+
+}
+/*** INICIO ***/
+main .inicio {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em 8px;
+    font-size: 1.4em;
+}
+/* FIM INICIO */
+
+/*** SOBRE ***/
+main .sobre {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em 0;
+    border-top: 3px solid #2c70ff;
+    border-bottom: 3px solid #2c70ff;
+}
+
+main .sobre .texto {
+    width: 50%;
+    margin: 0 0.5em;
+}
+
+main .sobre .texto h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+main .sobre .texto p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    color: #7c7c7c;
+}
+
+main .sobre .imagem img {
+    max-width: 200px;
+    width: 20vw;
+    margin: 0 0.5em;
+}
+/* FIM SOBRE */
+
+/*** PRODUTOS ***/
+main .produtos {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em 0.5em;
+}
+
+main .produtos h2 {
+    width: 50%;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+main .produtos .produto-itens {
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+}
+
+.produto-itens div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 250px;
+    width: 33vw;
+    min-width: 190px;
+    background-color: #f7f7f7;
+}
+
+main .produtos h3 {
+    padding: 0.5em;
+    color: #a4a4a4;
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+main .produtos img {
+    
+    width: 100%;
+}
+
+.produto-itens .purple {
+    border-top: 10px solid rgb(134, 65, 225);
+}
+
+.produto-itens .pink {
+    border-top: 10px solid rgb(199, 35, 63);
+}
+
+.produto-itens .blue {
+    border-top: 10px solid rgb(102 217 235);
+}
+/* FIM PRODUTOS */
+
+/*** PREÇOS ***/
+main .precos {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 2em 0.5em;
+    color: #a4a4a4;
+
+}
+
+main .precos .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    min-width: 300px;
+    padding: 30px;
+    border: 4px solid white;
+}
+
+main .precos h3 {
+    padding: 0.5em;
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+main .precos .preco {
+    width: 60%;
+    margin-bottom: 0.5em;
+    padding: 10px 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    color: black;
+}
+
+main .precos ul {
+    list-style-type: none;
+    font-size: 1.2em;
+    
+}
+main .precos ul li::before {
+    content: "✔️ ";
+}
+
+main .precos a {
+    font-weight: bolder;
+    font-size: 2em;
+    margin-top: 2em;
+    
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 0px;
+    color: black;
+    text-decoration: none;
+}
+main .precos a:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 8px black;
+    text-shadow: 1px 1px 10px white;
+    transition-duration: 0.25s;
+}
+/* FIM PREÇOS */ 
+
+/*** QUALIDADE ***/
+main .qualidade {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+    
+    margin: 0 auto;
+    padding: 2.5em 8px;
+}
+
+main .qualidade-item {
+    width: 300px;
+}
+
+main .qualidade-item h3 {
+    font-size: 2.3em;
+    border-left: 10px solid;
+    padding-left: 10px;
+    color: #a4a4a4;
+    margin-bottom: 20px;
+}
+
+main .qualidade-item p {
+    font-size: 1.3em;
+    color: #7c7c7c;
+}
+
+main .qualidade-item .inteligente, .qualidade-item .transparente {
+    border-color: #ae81ff;
+}
+
+main .qualidade-item .compacto, .qualidade-item .opaco {
+    border-color: #f9265e;
+}
+
+main .qualidade-item .economico, .qualidade-item .sustentavel {
+    border-color: #66d9eb;
+}
+/* FIM QUALIDADE */
+
+/*** NEWSLETTER ***/
+main .bg-newsletter {
+    background-color: #f7f7f7;
+}
+main .newsletter {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5em 8px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #a4a4a4;
+    border: 5px dotted #2c70ff;
+    border-right:5px dotted #2c70ff;
+    border-left: 5px dotted #2c70ff;
+}
+
+main .newsletter .texto {
+    width: 320px;
+    margin: 0 auto;
+}
+main .newsletter h2 {
+    font-size: 4em;
+    color: #a4a4a4;
+}
+
+main .newsletter p {
+    font-size: 1.5em;
+    color: #7c7c7c;
+}
+
+main .newsletter .form-email {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+main .newsletter .form-email input.email {
+    background-color: transparent;
+    border: 3px solid #2c70ff;
+    border-bottom: none;
+    height: 65px;
+    width: 388px;
+    font-size: 1em;
+    padding: 10px;
+}
+
+main .newsletter .form-email input.botao-enviar {
+    font-size: 1.5em;
+    
+    font-weight: bolder;
+    color: white;
+    border: none;
+    background-color: #2c70ff;
+    align-content: center;
+    padding: 20px 0;
+    width: 388px;
+}
+
+main .newsletter .form-email input.botao-enviar:hover {
+    cursor: pointer;
+    background-color: #1b4fc0;
+    color: white;
+    box-shadow: 1px 1px 10px blue;
+    transition-duration: 0.1s;
+    
+}
+/* FIM NEWSLETTER */
+/****************** FIM MAIN ******************/
+
+/******************** FOOTER ********************/
+footer {
+    text-align: center;
+    padding: 3.5em 0px;
+    background-color: #2c70ff;
+    color: #0d1c72;
+}
+
+footer a {
+    color: #0d1c72;
+    
+}
+footer a:hover {
+    color: white;
+    text-shadow: 1px 1px 4px white;
+}
+/****************** FIM FOOTER ******************/
