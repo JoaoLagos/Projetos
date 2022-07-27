@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
 * {
-    
     box-sizing: border-box;
 }
 
@@ -21,7 +20,7 @@ img {
 }
 
 ul {
-    padding: 0;
+    padding: 10px;
 }
 
 h1 {

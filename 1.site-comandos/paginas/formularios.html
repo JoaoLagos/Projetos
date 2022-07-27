@@ -28,28 +28,46 @@
                 <li><strong>e-mail:</strong> Para indicar que será escrito um endereço de e-mail.</li>
                 <li><strong>password:</strong> Para indicar que será escrito uma senha.</li>
                 <li><strong>submit:</strong>Para inserir o botão de enviar (SUBMIT). <strong>Nesse caso há uma OBSERVAÇÃO: Além do name="" e id="", caso queira escrever algo dentro desse botão (pois por padrão ele é vazio), use: <code>value="[mensagem]"</code></strong>.</li>
-                <li><strong>E entre outros.</strong></li>
+                <li><strong>E entre outros.</strong> (Só ver mais nos documentários. Mais abaixo foi mostrado uns exemplos de number, month, date e time)</li>
             </ul>
+            <br>
+            <p>Se quiser escrever alguma coisa dentro da caixa do input, dentro de <strong>&lt;input&gt;</strong>, use: <code>placeholder="[mensagem]"</code></p>
+            <br>
+            <p>Referência do tópico:</p>
+            <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Input#exemplos">LINK: Input</a></p>
+
         </li>
         <hr>
 
-        <li class="topic t3"><h2 class="title-topic">Label:</h2> <!-- LABEL -->
+        <li class="topic t3"><h2 class="title-topic">Input OBRIGATÓRIO e limites dos inputs:</h2> <!-- INPUT OBRIGATÓRIO E LIMITES -->
+            <p>Para tornar o input obrigatório, dentro da tag <strong>&lt;input&gt;</strong>, use: <code>required</code></p>
+            <p>Exemplo: <code>&lt;input required&gt;</code></p>
+            <br>
+            <p>Também pode limitar o tamanho de um input. Para isso, dentro de <strong>&lt;input&gt;</strong>, use: <code>minlength</code> ou <code>maxlength</code></p>
+        </li>
+        <hr>
+
+        <li class="topic t4"><h2 class="title-topic">Label:</h2> <!-- LABEL -->
             <p>Para linkar a caixa (<strong>input</strong>) com o texto de referência, use: <code>&lt;label for="[<abbr title="O id do input">id</abbr>]"&gt;</code></p>
         </li>
+        <hr>
 
-        <li class="topic t4"><h2 class="title-topic">Autocomplete:</h2> <!-- AUTOCOMPLETE -->
+        <li class="topic t5"><h2 class="title-topic">Autocomplete:</h2> <!-- AUTOCOMPLETE -->
             <p>Se quiser desligar o efeito abaixo, dentro de <strong>form</strong>, use: <code>autocomplete = "off"</code></p>
-            <img src="Imagens_das_Paginas/form-autocomplete.png" alt="">
+            <img src="Imagens_das_Paginas/form-autocomplete.png" alt="Exemplo de Autocomplete">
+            <br>
+            <p>O <strong>autocomplete</strong> dentro de form é algo mais geral. Para usar <strong>autocomplete</strong> especificando o input, dentro de <strong>&lt;input&gt;</strong>, use: <code>autocomplete="[tipo de autocomplemento]"</code></p>
+            <p>Nesse caso, dentro de <strong>input</strong>, aparecem diversas opções diferentes de on e off.</p>
         </li>
         <hr>
 
-        <li class="topic t5"><h2 class="title-topic">Envio do formulário:</h2> <!-- ENVIO DO FORMULÁRIO -->
+        <li class="topic t6"><h2 class="title-topic">Envio do formulário:</h2> <!-- ENVIO DO FORMULÁRIO -->
             <p>Para enviar o formulário, dentro de <strong>form</strong>, use: <code>action= "[para onde vai enviar]"</code></p>
             <p>Por exemplo: <strong>&lt;form action="cadastro.py"&gt; </strong></p>
         </li>
         <hr>
 
-        <li class="topic t6"><h2 class="title-topic">Método:</h2> <!-- MÉTODO -->
+        <li class="topic t7"><h2 class="title-topic">Método GET e POST:</h2> <!-- MÉTODO GET E POST -->
             <p>Para adicionar um método, use: <code>&lt;method: "[parâmetro]";&gt;</code></p>
             <p>Parâmetros:</p>
             <ul>
@@ -57,6 +75,29 @@
                 <li><strong>POST: </strong>Esconde os dados da URL. Mas ainda fica visível. Bom. também, para fazer envio de arquivos.</li>
             </ul>
             <p>Para proteger os dados, será necessário criptografar e usar os dados HTTPS. Isso não será visto aqui. Então, aprender sobre HTTPS.</p>
+        </li>
+        <hr>
+
+        <li class="topic t8"><h2 class="title-topic">Number, month, date e time:</h2>
+            <ul>
+                <li><strong>Number:</strong>
+                    <p>Para inserir um número no <strong>input</strong>, use: <code>&lt;input type="number"&gt;</code></p>
+                    <p>Nesse caso, os números são inteiros. Para mudar isso, dentro do <strong>input</strong>, use: <code>step="[<abbr title="0.1, 0.2, 0.5. O default é 1, por isso inteiro.">pulo dos valores numéricos</abbr>]"</code></p>
+                </li>
+                <hr>
+                <li><strong>Month:</strong>
+                    <p>Para inserir um <strong>input</strong> de mês/ano, use: <code>&lt;input type="month"&gt;</code></p>
+                </li>
+                <hr>
+                <li><strong>Date:</strong>
+                    <p>Para inserir um <strong>input</strong> de dia/mês/ano, use: <code>&lt;input type="date"&gt;</code></p>
+                </li>
+                <hr>
+                <li><strong>Time:</strong>
+                    <p>Para inserir um <strong>input</strong> de hora. use: <code>&lt;input type="time"&gt;</code></p>
+                </li>
+                <hr>
+            </ul>
         </li>
         <hr>
         
