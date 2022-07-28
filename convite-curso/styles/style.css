@@ -23,16 +23,15 @@ body {
 header{
     display: flex;
     flex-direction: row;
-    
-
 }
 .logo{
     font-family: Permanent Marker;
     display: flex;
     flex-direction: row;
-   margin: auto auto;
-   align-items: center;
-   gap: 40px;
+    
+    margin: auto auto;
+    align-items: center;
+    gap: 40px;
 }
 
 .logo img {
@@ -44,9 +43,12 @@ header{
 main {
     margin: auto auto;
     height: 90%;
-    width: 65%;
+    width: 75%;
     display: flex;
     flex-direction: row;
+    
+    
+
     align-items: center;
     gap: 70px;
     
@@ -82,7 +84,7 @@ main {
 
 .container{
     margin: auto auto;
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -91,7 +93,7 @@ main {
 .free-trial {
     font-size: 20px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     background-color: rgb(94, 4, 251);
     box-shadow: 1px 1px 6px rgb(0, 0, 0);
@@ -145,4 +147,49 @@ div.form p{
 
 /************FIM DIV-RIGHT*************/
 
+@media screen and (max-width: 603px) {
+    .logo{
+        font-family: Permanent Marker;
+        font-size: 0.7em;
+        display: flex;
+        flex-direction: row;
+        margin: auto auto;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .logo img {
+        height: 60px;
+    }
+    
+}
 
+@media screen and (max-width: 800px) {
+    .div-left h1{
+        font-size: 30px;
+    }
+    
+    .div-left p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    main {
+        height: 60vh;
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+        
+        gap: 40px;
+    }
+
+    
+
+    .container{
+        width: auto;
+    }
+    
+    
+}
