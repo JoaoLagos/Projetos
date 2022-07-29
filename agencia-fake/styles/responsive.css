@@ -11,6 +11,7 @@
     }
 
     main .inicio {
+        text-align: center;
         flex-direction: column;
         margin-bottom: 100px;
     }
