@@ -1,0 +1,34 @@
+@media screen and (max-width: 700px){
+    .navbar {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+    }
+    header .logo{
+        font-size: 47px;
+    }
+
+    main .inicio {
+        flex-direction: column;
+    }
+    .inicio div.left {
+        width: auto;
+    }
+    .inicio .contrate-agora {
+        margin: auto;
+        width: 180px;
+        border-radius: 10px;
+    }
+    .inicio div.right{
+        display: flex;
+    }
+    .inicio div.right img {
+        margin: auto;
+        justify-self: center;
+        width: 80vw;
+        max-width: 800px;
+        
+    }
+}

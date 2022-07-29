@@ -4,6 +4,7 @@
 
  <ol>
     <li><a href="https://joaolagos.github.io/Projetos/1.site-comandos/">1.site-comandos</a><strong>(MEU MANUAL. Ignorar a qualidade do site e do código. É apenas para uso pessoal e ele foi construído desde o início, então foi feito, majoritariamente, com conteúdos iniciais como o uso do &lt;b&gt; em vez de &lt;strong&gt;, o uso de &lt;br&gt; em vez de margin no CSS, etc. Portanto o código desse site está todo remendado. Futuramente pretendo corrigir)</strong></li>
+    <li><a href="https://joaolagos.github.io/Projetos/agencia-fake">agencia-fake</a>
     <li><a href="https://joaolagos.github.io/Projetos/convite-curso">convite-curso</a>
     <li><a href="https://joaolagos.github.io/Projetos/flexblog-clone">flexblog-clone</a>
     <li><a href="https://joaolagos.github.io/Projetos/galeria-sapatos">galeria-sapatos</a>
