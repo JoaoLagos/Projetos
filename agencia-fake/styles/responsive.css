@@ -28,7 +28,22 @@
         margin: auto;
         justify-self: center;
         width: 80vw;
-        max-width: 800px;
+        max-width: 250px;
         
     }
+}
+
+@media screen and (max-height: 600px) {
+    header {
+        height: 70px;
+    }
+
+    main {
+        margin-top: 70px;
+    }
+
+    .inicio {
+        height: auto;
+    }
+    
 }
