@@ -12,6 +12,7 @@
 
     main .inicio {
         flex-direction: column;
+        margin-bottom: 100px;
     }
     .inicio div.left {
         width: auto;
@@ -27,13 +28,13 @@
     .inicio div.right img {
         margin: auto;
         justify-self: center;
-        width: 80vw;
-        max-width: 250px;
+        width: 35vh;
+        max-width: 240px;
         
     }
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 610px) {
     header {
         height: 70px;
     }

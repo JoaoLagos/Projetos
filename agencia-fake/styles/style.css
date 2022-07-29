@@ -229,9 +229,10 @@ footer a:hover {
     text-decoration: underline;
     text-shadow: 1px 1px 7px white;
 }
+/*FIM FOOTER*/
 
 .whats {
-    margin: 40px;
+    padding: 5px;
     position: fixed;
     bottom: 0;
     right: 0;
