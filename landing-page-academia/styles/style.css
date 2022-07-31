@@ -22,11 +22,12 @@ body {
 
 header {
     background-color: rgba(0, 0, 0, 0.219);
-    height: 8vh;
+    height: 80px;
     width: 100vw;
     padding: 0px 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 
@@ -37,11 +38,13 @@ header {
     font-weight: bolder;
     text-shadow: 1px 1px 10px gray;
     letter-spacing: 2px;
+    text-align: center;
     }
 
 .nav-header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
     font-size: 18px;
 
