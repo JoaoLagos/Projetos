@@ -19,6 +19,16 @@
        height: 100%;
     }
 
+    main .newsletter h2 {
+        font-size: 3.5em;
+        text-align: center;
+    }
+    
+    main .newsletter p {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
     main .newsletter .form-email input.email, main .newsletter .form-email input.botao-enviar {
         width: 90vw;
     }
