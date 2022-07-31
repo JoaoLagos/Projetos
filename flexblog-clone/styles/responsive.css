@@ -1,0 +1,26 @@
+@media screen and (max-width:800px) {
+    main .sobre {
+        flex-direction: column;
+    }
+
+    main .sobre .texto {
+        width: auto;
+
+    }
+
+    main .sobre .imagem {
+        display: flex;
+        width: 50%;
+        margin: 20px auto;
+        
+    }
+
+    main .sobre .imagem img {
+       height: 100%;
+    }
+
+    main .newsletter .form-email input.email, main .newsletter .form-email input.botao-enviar {
+        width: 90vw;
+    }
+    
+}

@@ -146,7 +146,8 @@ main .produtos h2 {
 main .produtos .produto-itens {
     
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 60px;
     flex-wrap: wrap;
     
 
