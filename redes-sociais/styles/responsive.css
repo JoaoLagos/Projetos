@@ -1,0 +1,17 @@
+@media screen and (max-width: 450px) {
+    div.redes-sociais {
+        width: 100vw;
+        margin-right: 0px;
+
+        
+    }
+
+    div.redes-sociais > nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        
+    }
+    
+}
