@@ -10,3 +10,19 @@
     }
     
 }
+
+@media screen and (max-height: 750px) {
+    header {
+        position: static;
+    }
+
+    main .main-text {
+        font-size: 60px;
+        font-weight: 900;
+    }
+    
+    main .secundary-text {
+        font-size: 14px;
+    }
+    
+}
