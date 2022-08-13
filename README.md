@@ -10,13 +10,13 @@
     <li><a href="https://joaolagos.github.io/Projetos/galeria-sapatos">galeria-sapatos</a>
     <li><a href="https://joaolagos.github.io/Projetos/landing-page-1">landing-page-1</a>
     <li><a href="https://joaolagos.github.io/Projetos/landing-page-academia">landing-page-academia</a>
-    <li><a href="https://joaolagos.github.io/Projetos/minha-pagina">minha-pagina</a>
+    <li><a href="https://joaolagos.github.io/Projetos/minha-pagina">minha-pagina</a>  <strong>FALTA RESPONSIVO</strong>
     <li><a href="https://joaolagos.github.io/Projetos/pagina-login">pagina-login</a>
     <li><a href="https://joaolagos.github.io/Projetos/parallax-website">parallax-website</a>
     <li><a href="https://joaolagos.github.io/Projetos/projeto-cordel">projeto-cordel</a>
     <li><a href="https://joaolagos.github.io/Projetos/redes-sociais">redes-sociais</a>
     <li><a href="https://joaolagos.github.io/Projetos/site-android-1">site-android-1</a>
-    <li><a href="https://joaolagos.github.io/Projetos/site-informatica">site-informatica</a>
+    <li><a href="https://joaolagos.github.io/Projetos/site-informatica">site-informatica</a> <strong>FALTA RESPONSIVO</strong>
     <li><a href="https://joaolagos.github.io/Projetos/spotify-clone">spotify-clone</a>
  </ol>
 

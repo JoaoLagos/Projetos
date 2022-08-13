@@ -29,6 +29,7 @@
     }
 
     main > div#secundary > img {
+        max-width: 74vw;
         width: 390px;
         margin: auto auto;
     }
