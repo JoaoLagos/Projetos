@@ -27,6 +27,7 @@
                 <li><strong>text:</strong> GENÉRICO. Pode inserir qualquer texto.</li>
                 <li><strong>e-mail:</strong> Para indicar que será escrito um endereço de e-mail.</li>
                 <li><strong>password:</strong> Para indicar que será escrito uma senha.</li>
+                <li><strong>telefone:</strong>Para indicar que será escrito um número de telefone.</li>
                 <li><strong>submit:</strong>Para inserir o botão de enviar (SUBMIT). <strong>Nesse caso há uma OBSERVAÇÃO: Além do name="" e id="", caso queira escrever algo dentro desse botão (pois por padrão ele é vazio), use: <code>value="[mensagem]"</code></strong>.</li>
                 <li><strong>E entre outros.</strong> (Só ver mais nos documentários. Mais abaixo foi mostrado uns exemplos de number, month, date e time)</li>
             </ul>
@@ -78,7 +79,7 @@
         </li>
         <hr>
 
-        <li class="topic t8"><h2 class="title-topic">Number, month, date e time:</h2>
+        <li class="topic t9"><h2 class="title-topic">Number, month, date e time:</h2>
             <ul>
                 <li><strong>Number:</strong>
                     <p>Para inserir um número no <strong>input</strong>, use: <code>&lt;input type="number"&gt;</code></p>
@@ -100,7 +101,35 @@
             </ul>
         </li>
         <hr>
+
+        <li class="topic t10"><h2 class="title-topic">Fieldset:</h2> <!-- FIELDSET -->
+            <p>Você pode envelopar os itens do formulário com <strong>&lt;fieldset&gt;</strong> para criar um campo.<br>Exemplo abaixo:</p>
+            <img src="Imagens_das_Paginas/fieldset1.png" alt="Fieldset no código">
+            <br>
+            <img src="Imagens_das_Paginas/fieldset2.png" alt="Fieldset aplicado no site">
+        </li>
+        <hr>
         
+        <li class="topic t11"><h2 class="title-topic">CheckBox e Radion Buttom:</h2> <!-- CHECKBOX E RADIO BUTTOM -->
+            <ul>
+                <li><strong>CheckBox:</strong>
+                    <p>Caixas para marcar. PODE SER MÚLTIPLOS. Para isso, use: <strong>&lt;input type="checkbox"&gt;</strong></p>
+                    <p><strong>Obrigatório</strong> colocar <strong>name</strong> e <strong>id</strong> para eles. Para caso a tela seja pequena, como em celular. Aí clicar no box fica dificil, podendo assim associar um label. Obeserve abaixo:</p>
+                    <img src="Imagens_das_Paginas/checkbox.png" alt="Checkbox 1">
+                    <p>Com <strong>label</strong>:</p>
+                    <img src="Imagens_das_Paginas/checkbox2.png" alt="Checkbox 2">
+                </li>
+                <hr>
+                <li><strong>Radio Buttom:</strong>
+                <p>Caixas para marcar. Mas, diferentemente do CheckBox, NÃO PODE SER MÚLTIPLOS, APENAS UM. Para isso, use: <strong>&lt;input type="radio"&gt;</strong></p>
+                <p><strong>Obrigatório</strong> colocar <strong>name</strong>, <strong>id</strong> e <strong>value</strong> (value é importante para o .php saber qual caixa se trata) para eles. Para caso a tela seja pequena, como em celular. Aí clicar no box fica dificil, podendo assim associar um label. Obeserve abaixo:</p>
+                <p>Aqui temos uma particularidade especifica. Como só devemos marcar um, o <strong>name</strong> deve ser o mesmo, compartilhado entre eles, como na imagem abaixo:</p>
+                <img src="Imagens_das_Paginas/radio-buttom.png" alt="">
+                </li>
+            </ul>
+        </li>
+        <hr>
+
         <li class="topic treferencia"><h2 class="title-topic">Referências:</h2> <!-- REFERÊNCIAS -->
             <ul class="referencias">
                 <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/Forms/Your_first_form" target="_blank">Meu primeiro formulário HTML</a></li>
@@ -109,5 +138,7 @@
                 <li><a href="https://www.w3schools.com/html/html_forms.asp">W3C: Formulários HTML</a> <strong>(OFICIAL)</strong></li>
             </ul>
         </li>
+
+    
 </body>
 </html>
